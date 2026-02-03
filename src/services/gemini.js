@@ -243,3 +243,4 @@ export const chatWithGemini = async (messages) => {
     }
 };
 
+// Gemini API integration service
