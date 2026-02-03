@@ -1,7 +1,10 @@
 # StudyBuddy - AI-Powered Study Notes & Quiz Platform
 
 ## 🔗 Live Demo
-[https://studybuddy-ai.netlify.app](https://studybuddy-ai.netlify.app)
+[https://ashfaaqkt.com/StudyBuddy-MiniProject-Entri-MERN/](https://ashfaaqkt.com/StudyBuddy-MiniProject-Entri-MERN/)
+
+> [!IMPORTANT]  
+> **Security Notice:** For security reasons and to protect the API key, the **Gemini AI features (Quiz Generation & Summarization) are disabled in the live demo**. To experience the full AI functionality, please **download/clone the files from this repository** and run the project on your **localhost** using your own API key as described in the Setup Instructions below.
 
 ## 📖 Description
 StudyBuddy is a comprehensive AI-powered study platform developed as a **Mini Project for the MERN Full Stack program at Entri Elevate**. It is designed to help students organize their learning efficiently by allowing users to manage study notes, generate automated quizzes from their content, and track performance through interactive analytics.
@@ -24,7 +27,7 @@ This project was developed as a **Mini Project for Entri Elevate**, aiming to br
 **APIs:** Google Gemini API (gemini-2.0-flash)
 **Libraries:** React Router, Recharts, React Icons, React Hook Form, Axios, date-fns, React Quill
 **AI Tools:** Google Gemini API
-**Deployment:** Netlify
+**Deployment:** GitHub Pages
 
 ## 🤖 AI Integration 
 **Description:**
@@ -41,11 +44,11 @@ This project was developed as a **Mini Project for Entri Elevate**, aiming to br
 ### Installation Steps
 1. Clone the repository
 ```bash
-git clone https://github.com/ashfaaqkt/study-buddy.git
+git clone https://github.com/ashfaaqkt/StudyBuddy-MiniProject-Entri-MERN.git
 ```
 Navigate to project directory
 ```bash
-cd study-buddy
+cd StudyBuddy-MiniProject-Entri-MERN
 ```
 2. Install dependencies
 ```bash
