@@ -62,3 +62,4 @@ export const renderMarkdown = (text) => {
     return result.join('');
 };
 
+// Utility functions for the app
