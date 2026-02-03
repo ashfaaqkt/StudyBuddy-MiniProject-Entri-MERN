@@ -14,7 +14,7 @@ import GeminiChat from './components/Tools/GeminiChat';
 function App() {
     return (
         <AppProvider>
-            <Router>
+            <Router basename="/StudyBuddy-MiniProject-Entri-MERN">
                 <div className="sb-shell">
                     <Header />
                     <main className="flex-1 pt-32 md:pt-24 pb-12 relative z-10">

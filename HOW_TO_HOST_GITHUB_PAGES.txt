@@ -1,0 +1,60 @@
+STEP-BY-STEP GUIDE: HOW TO HOST STUDYBUDDY ON GITHUB PAGES
+=========================================================
+
+Since your project is built with Vite and React, follow these exact steps to host it on GitHub Pages.
+
+STEP 1: Install the GitHub Pages Package
+----------------------------------------
+1. Open your terminal in the project folder.
+2. Run this command:
+   npm install gh-pages --save-dev
+
+STEP 2: Update Your package.json
+--------------------------------
+1. Open the 'package.json' file in your code editor.
+2. Add a 'homepage' property at the top level (replace 'ashfaaqkt' and 'StudyBuddy-MiniProject-Entri-MERN' with your actual username and repo name if they are different):
+   "homepage": "https://ashfaaqkt.github.io/StudyBuddy-MiniProject-Entri-MERN",
+
+3. Inside the "scripts" section, add these two lines:
+   "predeploy": "npm run build",
+   "deploy": "gh-pages -d dist"
+
+STEP 3: Update vite.config.js
+-----------------------------
+1. Open 'vite.config.js'.
+2. Add a 'base' property inside the defineConfigFile object:
+   export default defineConfig({
+     base: "/StudyBuddy-MiniProject-Entri-MERN/",
+     plugins: [react()],
+   })
+   (This ensures the paths for images and CSS work correctly on GitHub)
+
+STEP 4: Deploy Your Site
+------------------------
+1. Go back to your terminal.
+2. Run this command:
+   npm run deploy
+
+   This command will:
+   a. Build your project into the 'dist' folder.
+   b. Create a 'gh-pages' branch on GitHub.
+   c. Upload the 'dist' folder content to that branch.
+
+STEP 5: Enable GitHub Pages in Settings
+---------------------------------------
+1. Go to your repository on GitHub.com.
+2. Click on 'Settings' (top tab).
+3. Click on 'Pages' (sidebar on the left).
+4. Under 'Build and deployment' > 'Branch', make sure it is set to:
+   - Branch: gh-pages
+   - Folder: / (root)
+5. Click 'Save'.
+
+STEP 6: Visit Your Site
+-----------------------
+It takes about 1-2 minutes for GitHub to process the site. Your link will be:
+https://ashfaaqkt.github.io/StudyBuddy-MiniProject-Entri-MERN/
+
+---------------------------------------------------------
+CREDIT: Ashfaaq Feroz Muhammad | Entri Elevate Mini Project
+---------------------------------------------------------
