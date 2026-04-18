@@ -1,4 +1,4 @@
-import { HashRouter as Router } from 'react-router-dom';
+import { HashRouter as Router, Routes, Route } from 'react-router-dom';
 import { AppProvider } from './context/AppContext';
 import Header from './components/Header/Header';
 import Footer from './components/Footer/Footer';
@@ -14,7 +14,7 @@ import GeminiChat from './components/Tools/GeminiChat';
 function App() {
     return (
         <AppProvider>
-            <Router basename="/StudyBuddy-MiniProject-Entri-MERN">
+            <Router>
                 <div className="sb-shell">
                     <Header />
                     <main className="flex-1 pt-32 md:pt-24 pb-12 relative z-10">
